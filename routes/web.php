@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Route;
 
@@ -8,6 +9,10 @@ Route::get('/', function () {
 });
 
 Route::resource('/menu',MenuController::class);
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard.dashboard');
+});
 
 Route::get('/contact', function () {
     return view('layouts.contact');

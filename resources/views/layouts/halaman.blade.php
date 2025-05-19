@@ -164,10 +164,9 @@
     <!-- Halaman Ketiga -->
 
     <!-- Halaman Keempat -->
-    <div id="serv"
-        class="flex flex-col lg:flex-row justify-center items-start gap-16 py-[140px] font-[Inter] px-4">
+    <div id="serv" class="flex flex-col lg:flex-row justify-center items-start gap-16 py-[140px] font-[Inter] px-4">
         <!-- Kiri: Teks -->
-        <div class="max-w-2xl mt-16 text-center lg:text-left">
+        <div class="max-w-2xl mt-24 text-center lg:text-left">
             <div class="text-[#ff6b6b] text-[16px] font-medium mb-6">OUR STORY & SERVICES</div>
             <div class="text-[#2d3e50] text-[28px] sm:text-[35px] font-bold mb-6 leading-tight">
                 Layanan Rumah Makan<br>Amenk Kami
@@ -202,7 +201,7 @@
                 <div class="text-[#2d3e50] text-[18px] font-bold mb-2 group-hover:text-white transition-colors">FAST
                     DELIVERY</div>
                 <div class="text-[#6c757d] text-[14px] leading-relaxed group-hover:text-white transition-colors">
-                    We deliver your order promptly to your door
+                    We deliver your order promptly to your door Car woodylls
                 </div>
             </div>
 
