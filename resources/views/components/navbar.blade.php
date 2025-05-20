@@ -2,12 +2,12 @@
     <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
 
         <!-- Logo -->
-        <div class="flex items-center space-x-3">
-            <a href="{{ url('/') }}">
+        <a href="{{ url('/') }}" class="flex items-center space-x-3">
+            <div>
                 <img src="{{ asset('assets/image/logo/amenk.jpg') }}" alt="Logo" class="h-10 rounded-full" />
-            </a>
+            </div>
             <span class="text-xl font-bold text-[#31515C]">Rumah Amenk</span>
-        </div>
+        </a>
 
         <!-- Hamburger (Mobile) -->
         <div class="md:hidden">
@@ -25,7 +25,7 @@
                 class="text-lg font-medium {{ request()->is('/') ? 'text-[#FFA800]' : 'text-[#31515C] hover:text-[#FFA800]' }}">
                 Home
             </a>
-            <a href="{{ route('menu.index') }}"
+            <a href="{{ url('/menu') }}"
                 class="text-lg font-medium {{ request()->is('menu*') ? 'text-[#FFA800]' : 'text-[#31515C] hover:text-[#FFA800]' }}">
                 Menu
             </a>

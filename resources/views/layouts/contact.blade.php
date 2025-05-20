@@ -1,38 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./fontawesome-free-6.6.0-web/css/all.min.css " rel="stylesheet" />
-    <!-- Link Google Font -->
-    <link rel="preconnect" href="https://fonts.gooleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-    <!-- Link Google Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Boxicons Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!-- Boxicons Link -->
-
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    @vite('resources/css/app.css')
-</head>
-
-<body class="bg-gray-50">
-    <!-- navbar -->
-    <x-navbar></x-navbar>
-    <!-- navbar -->
-
+<x-layout :title="$title">
     <!-- Container -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col lg:flex-row bg-white shadow-lg rounded-lg overflow-hidden">
                 <div class="w-full lg:w-1/2 h-64 lg:h-auto">
-                    <img src="{{asset('assets/image/sekolah.jpg')}}" alt="Contact Us" class="w-full h-full object-cover" />
+                    <img src="{{ asset('assets/image/sekolah.jpg') }}" alt="Contact Us"
+                        class="w-full h-full object-cover" />
                 </div>
 
                 <!-- Form -->
@@ -52,7 +25,8 @@
                         <!-- Name Input -->
                         <div class="space-y-2">
                             <label for="name" class="text-sm font-medium text-gray-700">Nama Anda</label>
-                            <input type="text" id="your-name" name="Nama" placeholder="Masukkan nama Anda" required
+                            <input type="text" id="your-name" name="Nama" placeholder="Masukkan nama Anda"
+                                required
                                 class="w-full px-4 py-2 sm:py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm sm:text-base" />
                         </div>
 
@@ -73,15 +47,15 @@
                         <!-- Email Input -->
                         <div class="space-y-2">
                             <label for="email" class="text-sm font-medium text-gray-700">Email Anda</label>
-                            <input type="email" id="your-email" name="Email" placeholder="Masukkan email kamu" required
+                            <input type="email" id="your-email" name="Email" placeholder="Masukkan email kamu"
+                                required
                                 class="w-full px-4 py-2 sm:py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm sm:text-base" />
                         </div>
 
                         <!-- Message Input -->
                         <div class="space-y-2">
                             <label for="message" class="text-sm font-medium text-gray-700">Pesan</label>
-                            <textarea id="message" name="Pesan" rows="7" placeholder="Tulis pesan Anda di sini..."
-                                rows="4" required
+                            <textarea id="message" name="Pesan" rows="7" placeholder="Tulis pesan Anda di sini..." rows="4" required
                                 class="w-full px-4 py-2 sm:py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm sm:text-base resize-none"></textarea>
                         </div>
 
@@ -93,13 +67,4 @@
             </div>
         </div>
     </div>
-
-    <!-- Footer -->
-    <x-footer></x-footer>
-
-    <script src="{{asset('assets/js/kontak.js')}}"></script>
-    <script src="{{asset('assets/js/kontak.js')}}"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-</body>
-
-</html>
+</x-layout>

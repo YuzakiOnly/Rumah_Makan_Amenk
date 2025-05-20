@@ -1,50 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./fontawesome-free-6.6.0-web/css/all.min.css " rel="stylesheet" />
-    <!-- Link Google Font -->
-    <link rel="preconnect" href="https://fonts.gooleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-    <!-- Link Google Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Boxicons Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!-- Boxicons Link -->
-
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    @vite('resources/css/app.css')
-    <title>Rumah Amenk</title>
-</head>
-
-<body class="">
-    <!-- navbar -->
-    <x-navbar></x-navbar>
-    <!-- navbar -->
-
-    <!-- foto -->
-    <div class="foto-ubah"></div>
-    <!-- foto -->
-
+<x-layout :title="$title">
     <!-- halaman Menu makanan berat -->
     <div class="pb-20 font-[Outfit]">
         <div class="px-20 py-10">
             <div class="flex justify-between">
                 <h2 class="text-[#31515C] text-4xl font-bold sm:text-left sm:max-w-full">Menu <span
-                    class="text-[#FFA800]">Makanan</span></h2>
+                        class="text-[#FFA800]">Makanan</span></h2>
             </div>
         </div>
 
         <div class="flex flex-wrap justify-start px-4 md:px-20 lg:px-[100px] gap-20">
             <!-- Menu Makanan Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -62,7 +29,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Ayam Drakor</h3>
@@ -73,17 +41,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}} 
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url("/detail")}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -92,7 +60,8 @@
             </div>
 
             <!-- Menu Makanan Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -110,7 +79,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Ayam Drakor</h3>
@@ -121,17 +91,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url("/detail")}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -140,7 +110,8 @@
             </div>
 
             <!-- Menu Makanan Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -158,7 +129,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Ayam Drakor</h3>
@@ -169,17 +141,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url("/detail")}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -188,7 +160,8 @@
             </div>
 
             <!-- Menu Makanan Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -206,7 +179,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Ayam Drakor</h3>
@@ -217,17 +191,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url("/detail")}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -243,13 +217,14 @@
         <div class="px-20 py-10">
             <div class="flex justify-between">
                 <h2 class="text-[#31515C] text-4xl font-bold sm:text-left sm:max-w-full">Menu <span
-                    class="text-[#FFA800]">Cemilan</span></h2>
+                        class="text-[#FFA800]">Cemilan</span></h2>
             </div>
         </div>
 
         <div class="flex flex-wrap justify-start px-4 md:px-20 lg:px-[100px] gap-20">
             <!-- Menu Minuman Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -267,7 +242,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Salad Buah</h3>
@@ -278,17 +254,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url('/detail')}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -297,7 +273,8 @@
             </div>
 
             <!-- Menu Minuman Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -315,7 +292,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Salad Buah</h3>
@@ -326,17 +304,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url('/detail')}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -345,7 +323,8 @@
             </div>
 
             <!-- Menu Minuman Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -363,7 +342,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Salad Buah</h3>
@@ -374,17 +354,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url('/detail')}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -393,7 +373,8 @@
             </div>
 
             <!-- Menu Minuman Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -411,7 +392,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Salad Buah</h3>
@@ -422,17 +404,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url('/detail')}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -448,13 +430,14 @@
         <div class="px-20 py-10">
             <div class="flex justify-between">
                 <h2 class="text-[#31515C] text-4xl font-bold sm:text-left sm:max-w-full">Menu <span
-                    class="text-[#FFA800]">Minuman</span></h2>
+                        class="text-[#FFA800]">Minuman</span></h2>
             </div>
         </div>
 
         <div class="flex flex-wrap justify-start px-4 md:px-20 lg:px-[100px] gap-20">
             <!-- Menu Makanan Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -472,7 +455,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Es Teller</h3>
@@ -483,17 +467,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url('/detail')}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -502,7 +486,8 @@
             </div>
 
             <!-- Menu Makanan Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -520,7 +505,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Es Teller</h3>
@@ -531,17 +517,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url('/detail')}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -550,7 +536,8 @@
             </div>
 
             <!-- Menu Makanan Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -568,7 +555,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Es Teller</h3>
@@ -579,17 +567,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url('/detail')}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -598,7 +586,8 @@
             </div>
 
             <!-- Menu Makanan Item -->
-            <div class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
+            <div
+                class="group relative block overflow-hidden w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] rounded-2xl shadow-md">
                 <!-- Wishlist Button -->
                 <button
                     class="absolute top-4 right-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
@@ -616,7 +605,8 @@
 
                 <!-- Product Information -->
                 <div class="relative border border-gray-100 bg-white p-5">
-                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New </span>
+                    <span class="bg-yellow-400 px-3 py-1.5 text-xs text-white font-medium whitespace-nowrap"> New
+                    </span>
 
                     <!-- Product Title -->
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Es Teller</h3>
@@ -627,17 +617,17 @@
                     </p>
 
                     <!-- Rating Section -->
-                    <div class="flex items-center mt-2 text-yellow-400">
+                    {{-- <div class="flex items-center mt-2 text-yellow-400">
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div>
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
-                        <a href="{{url('/detail')}}"
+                        <a href="{{ url('/detail') }}"
                             class="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105 cursor-pointer text-white text-center">
                             Add to Cart
                         </a>
@@ -647,14 +637,4 @@
         </div>
     </div>
     <!-- halaman Menu minuman -->
-
-    <!-- footer -->
-    <x-footer></x-footer>
-    <!-- footer -->
-
-    <script src="{{ asset('assets/js/footer.js') }}"></script>
-    <script src="{{ asset('assets/js/kontak.js') }}"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-</body>
-
-</html>
+</x-layout>

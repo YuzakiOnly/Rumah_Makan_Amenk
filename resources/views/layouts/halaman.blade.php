@@ -1,35 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./fontawesome-free-6.6.0-web/css/all.min.css " rel="stylesheet" />
-    <!-- Link Google Font -->
-    <link rel="preconnect" href="https://fonts.gooleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-    <!-- Link Google Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Boxicons Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!-- Boxicons Link -->
-
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    @vite('resources/css/app.css')
-    <title>Rumah Amenk</title>
-</head>
-
-<body>
-    <!-- Navbar -->
-    <x-navbar></x-navbar>
-    <!-- navbar -->
-
+<x-layout :title="$title">
     <!-- Hero Section -->
-    <div class="font-[Inter] flex flex-col-reverse md:flex-row items-center justify-between w-full px-6 md:px-16 py-16 max-w-7xl mx-auto">
+    <div
+        class="font-[Inter] flex flex-col-reverse md:flex-row items-center justify-between w-full px-6 md:px-16 py-16 max-w-7xl mx-auto">
         <!-- Text -->
         <div class="w-full md:w-1/2 text-center md:text-left mt-8 md:mt-0">
             <h2 class="text-[#FFA800] text-2xl font-semibold mb-4">SELAMAT DATANG</h2>
@@ -40,7 +12,7 @@
             <p class="text-[#666666] text-lg mt-5 mb-6 px-2 md:px-0">
                 Di mana Setiap Piring Menenun Kisah Penguasaan Kuliner dan Keahlian yang Penuh Semangat.
             </p>
-            <a href="{{ route('menu.index') }}">
+            <a href="{{ url('/menu') }}">
                 <button
                     class="bg-[#FFA800] hover:bg-[#31515C] text-white text-lg font-medium px-10 py-4 rounded-full shadow-md transition duration-300">
                     MENU KAMI
@@ -164,7 +136,8 @@
     <!-- Halaman Ketiga -->
 
     <!-- Halaman Keempat -->
-    <div id="serv" class="flex flex-col lg:flex-row justify-center items-start gap-16 py-[140px] font-[Inter] px-4">
+    <div id="serv"
+        class="flex flex-col lg:flex-row justify-center items-start gap-16 py-[140px] font-[Inter] px-4">
         <!-- Kiri: Teks -->
         <div class="max-w-2xl mt-24 text-center lg:text-left">
             <div class="text-[#ff6b6b] text-[16px] font-medium mb-6">OUR STORY & SERVICES</div>
@@ -230,13 +203,4 @@
             </div>
         </div>
     </div>
-
-    {{-- footer --}}
-    <x-footer></x-footer>
-    {{-- footer --}}
-
-    <script src="{{ asset('assets/js/main.js') }}"></script>
-    <script src="{{ asset('assets/js/footer.js') }}"></script>
-</body>
-
-</html>
+</x-layout>

@@ -26,9 +26,9 @@
             <ul class="space-y-4 text-[#d6d6d6] text-[15px]">
                 <li><a href="{{ url('/') }}"
                         class="hover:text-white hover:-translate-x-1 transition duration-300 block">Home</a></li>
-                <li><a href="{{ route('menu.index') }}"
+                <li><a href="{{ url('/menu') }}"
                         class="hover:text-white hover:-translate-x-1 transition duration-300 block">Menu</a></li>
-                <li><a href="{{ url('/serv') }}"
+                <li><a href="{{ url('/') }}"
                         class="hover:text-white hover:-translate-x-1 transition duration-300 block">Services</a>
                 </li>
                 <li><a href="{{ url('/contact') }}"
