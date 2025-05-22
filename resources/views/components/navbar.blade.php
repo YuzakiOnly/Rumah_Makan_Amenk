@@ -38,11 +38,10 @@
             </a>
         </div>
 
-        <!-- Contact Button (Desktop) -->
         <div class="hidden md:block">
-            <a href="{{ url('/contact') }}"
+            <a href="{{ url('/login') }}"
                 class="inline-flex items-center px-5 py-2 bg-orange-500 text-white text-base rounded-full shadow-md hover:bg-orange-600 transition">
-                Contact Us
+                Login
             </a>
         </div>
     </div>
