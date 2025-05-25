@@ -1,4 +1,4 @@
-<x-login>
+<x-logins>
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form>
@@ -46,4 +46,4 @@
             </div>
         </div>
     </div>
-</x-login>
+</x-logins>

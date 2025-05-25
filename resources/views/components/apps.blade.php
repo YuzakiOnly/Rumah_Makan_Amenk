@@ -16,7 +16,7 @@
 
 <body class="bg-gray-100">
     <div>
-        <x-alert></x-alert>
+        <x-Switalert></x-Switalert>
 
         <x-navbarD></x-navbarD>
 
@@ -24,7 +24,7 @@
 
         <main class="p-6 sm:ml-64">{{$slot}}</main>
 
-        <x-add></x-add>
+        <x-adds></x-adds>
     </div>
 
 

@@ -1,6 +1,6 @@
 @section('app', 'Page Kategori | Create')
 
-<x-app>
+<x-apps>
     <div class="p-5 bg-white rounded-lg mt-14">
         <div class="flex border-b-2 pb-4">
             <div class="bg-gray-800 flex rounded-full">
@@ -39,4 +39,4 @@
             </form>
         </div>
     </div>
-</x-app>
+</x-apps>

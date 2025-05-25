@@ -1,4 +1,4 @@
-<x-layout :title="$title">
+<x-layouts :title="$title">
     <!-- Halaman -->
     <div class="w-full min-h-screen bg-[#fcfcfc] font-['Outfit'] mb-[70px]">
         <div class="flex items-center mt-[30px] mb-[30px] ml-[120px]">
@@ -47,4 +47,4 @@
             </div>
         </div>
     </div>
-</x-layout>
+</x-layouts>

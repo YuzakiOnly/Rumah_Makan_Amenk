@@ -1,6 +1,6 @@
 @section('app', 'Page Book | Create')
 
-<x-app>
+<x-apps>
     <div class="p-5 bg-white rounded-lg mt-14">
         <div class="flex border-b-2 pb-4">
             <div class="bg-gray-800 flex rounded-full">
@@ -73,7 +73,7 @@
 
                             <div>
                                 <label class="block mb-1 text-sm font-medium text-gray-900">Upload Image</label>
-                                <input accept="image/*" name="image" type="file" 
+                                <input accept="image/*" name="image" type="file"
                                     class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-white focus:outline-none" value="{{ $product->image }}"
                                     @change="imageUrl = URL.createObjectURL($event.target.files[0])">
                             </div>
@@ -96,4 +96,4 @@
             </form>
         </div>
     </div>
-</x-app>
+</x-apps>

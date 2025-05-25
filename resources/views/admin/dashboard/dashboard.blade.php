@@ -1,7 +1,7 @@
 @section('app', 'Page Dashboard')
 
-<x-app>
+<x-apps>
     @section('main')
 
     @endsection
-</x-app>
+</x-apps>

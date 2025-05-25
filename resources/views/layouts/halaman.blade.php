@@ -1,4 +1,4 @@
-<x-layout :title="$title">
+<x-layouts :title="$title">
     <!-- Hero Section -->
     <div
         class="font-[Inter] flex flex-col-reverse md:flex-row items-center justify-between w-full px-6 md:px-16 py-16 max-w-7xl mx-auto">
@@ -203,4 +203,4 @@
             </div>
         </div>
     </div>
-</x-layout>
+</x-layouts>

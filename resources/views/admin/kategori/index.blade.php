@@ -1,6 +1,6 @@
 @section('app', 'Page Kategori')
 
-<x-app>
+<x-apps>
     <div class="p-5 bg-white rounded-lg mt-14">
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -58,4 +58,4 @@
             </a>
         @endsection
     </div>
-</x-app>
+</x-apps>

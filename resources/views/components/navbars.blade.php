@@ -2,7 +2,7 @@
     <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
 
         <!-- Logo -->
-        <a href="{{ url('/') }}" class="flex items-center space-x-3">
+        <a href="{{ url('/home') }}" class="flex items-center space-x-3">
             <div>
                 <img src="{{ asset('assets/image/logo/amenk.jpg') }}" alt="Logo" class="h-10 rounded-full" />
             </div>
@@ -21,15 +21,16 @@
 
         <!-- Menu (Desktop) -->
         <div class="hidden md:flex space-x-10 items-center">
-            <a href="{{ url('/') }}"
-                class="text-lg font-medium {{ request()->is('/') ? 'text-[#FFA800]' : 'text-[#31515C] hover:text-[#FFA800]' }}">
+            <a href="{{ url('/home') }}"
+                class="text-lg font-medium {{ request()->is('/') || request()->is('home') ? 'text-[#FFA800]' : 'text-[#31515C] hover:text-[#FFA800]' }}">
                 Home
             </a>
             <a href="{{ url('/menu') }}"
-                class="text-lg font-medium {{ request()->is('menu*') ? 'text-[#FFA800]' : 'text-[#31515C] hover:text-[#FFA800]' }}">
+                class="text-lg font-medium {{ request()->is('menu') || request()->is('menu/*') ? 'text-[#FFA800]' : 'text-[#31515C] hover:text-[#FFA800]' }}">
                 Menu
             </a>
-            <a href="{{ url('/') }}#serv" class="text-lg font-medium text-[#31515C] hover:text-[#FFA800]">
+            <a href="{{ url('/home') }}#serv"
+                class="text-lg font-medium text-[#31515C] hover:text-[#FFA800]">
                 Services
             </a>
             <a href="{{ url('/contact') }}"
@@ -38,6 +39,7 @@
             </a>
         </div>
 
+        <!-- Login Button -->
         <div class="hidden md:block">
             <a href="{{ url('/login') }}"
                 class="inline-flex items-center px-5 py-2 bg-orange-500 text-white text-base rounded-full shadow-md hover:bg-orange-600 transition">

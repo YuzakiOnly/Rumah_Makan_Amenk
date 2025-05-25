@@ -27,11 +27,11 @@
 </head>
 
 <body>
-    <x-navbar></x-navbar>
+    <x-navbars></x-navbars>
 
     {{$slot}}
 
-    <x-footer></x-footer>
+    <x-footers></x-footers>
 
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="{{ asset('assets/js/footer.js') }}"></script>

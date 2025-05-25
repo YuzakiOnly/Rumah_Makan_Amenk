@@ -1,4 +1,4 @@
-<x-layout :title="$title">
+<x-layouts :title="$title">
     <!-- halaman Menu makanan berat -->
     <div class="pb-20 font-[Outfit]">
         <div class="px-20 py-10">
@@ -47,7 +47,7 @@
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons mr-1">star</span>
                         <span class="material-icons">star_border</span>
-                    </div> --}} 
+                    </div> --}}
 
                     <!-- Add to Cart Button -->
                     <form class="mt-4">
@@ -637,4 +637,4 @@
         </div>
     </div>
     <!-- halaman Menu minuman -->
-</x-layout>
+</x-layouts>
