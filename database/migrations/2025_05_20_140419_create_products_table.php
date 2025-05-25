@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('kategori_id')->constrained('kategoris')->onDelete('cascade')->onUpdate('cascade');
             $table->decimal('harga', 10, 2);
             $table->integer('stok');
+            $table->longText('deskripsi');
             $table->string('image');
             $table->timestamps();
         });

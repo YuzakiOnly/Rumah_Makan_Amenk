@@ -15,8 +15,8 @@ class KategoriController extends Controller
     public function index()
     {
         //
-        $allKategori = Kategori::all();
-        return view('admin.kategori.index',compact('allKategori'));
+        $allkategori = Kategori::paginate(8);
+        return view('admin.kategori.index', compact('allkategori'));
     }
 
     /**
@@ -34,24 +34,29 @@ class KategoriController extends Controller
     public function store(Request $request)
     {
         //
-        $validatedData = $request->validate([
-            'nama_kategori' => 'required|max:100',
-        ]);
+        $validateData = $request->validate(
+            [
+                'nama_kategori' => 'required|max:20',
+            ],
+            [
+                'name_kategori.required' => 'Nama Kategori wajib diisi.',
+                'name_kategori.max' => 'Nama Kategori tidak boleh lebih dari 20 karakter.',
+            ]
+        );
 
-        //simpan data
-        Kategori::create($validatedData);
+        Kategori::create($validateData);
 
-        //redirect index kategori
-        return redirect()->route('admin.kategori.index')->with('success', 'Data berhasil disimpan!');
+        if ($request->input('submit_action') === 'stay') {
+            return redirect()->route('kategori.create')->with('success', 'Data berhasil disimpan');
+        }
+
+        return redirect()->route('kategori.index')->with('success', 'Data berhasil disimpan!');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Kategori $kategori)
-    {
-
-    }
+    public function show(Kategori $kategori) {}
 
     /**
      * Show the form for editing the specified resource.
@@ -59,7 +64,7 @@ class KategoriController extends Controller
     public function edit(Kategori $kategori)
     {
         //
-        return view('admin.kategori.edit' , compact('kategori'));
+        return view('admin.kategori.edit',compact('kategori'));
     }
 
     /**
@@ -68,15 +73,23 @@ class KategoriController extends Controller
     public function update(Request $request, Kategori $kategori)
     {
         //
-        $validatedData = $request->validate([
-            'nama_kategori' => 'required|max:100',
-        ]);
+        $validateData = $request->validate(
+            [
+                'nama_kategori' => 'required|max:20',
+            ],
+            [
+                'name_kategori.required' => 'Nama Kategori wajib diisi.',
+                'name_kategori.max' => 'Nama Kategori tidak boleh lebih dari 20 karakter.',
+            ]
+        );
 
-        //update data
-        $kategori->update($validatedData);
+        $kategori->update($validateData);
 
-        //redirect index kategori
-        return redirect()->route('admin.kategori.index')->with('success', 'Data berhasil diupdate!');
+        if ($request->input('submit_action') === 'stay') {
+            return redirect()->route('kategori.create')->with('success', 'Data berhasil disimpan');
+        }
+
+        return redirect()->route('kategori.index')->with('success', 'Data berhasil diupdate!');
     }
 
     /**
@@ -87,6 +100,6 @@ class KategoriController extends Controller
         //
         $kategori->delete();
 
-        return redirect()->back()->with('success', 'Data berhasil dihapus!');
+        return redirect()->route('kategori.index')->with('success', 'Data berhasil dihapus!');
     }
 }

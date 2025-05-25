@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', function () {
     return view('layouts.login')->with('title', 'Page Home');
 });
-
 Route::get('/', function () {
     return view('layouts.halaman')->with('title', 'Page Home');
 });

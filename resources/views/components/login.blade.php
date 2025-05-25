@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/login.css">
     <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
-    <title>Rumah Amenk</title>
+    <title>Page | Login</title>
 </head>
 
 <body>
