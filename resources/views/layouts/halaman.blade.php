@@ -80,7 +80,7 @@
     <div class="flex flex-wrap justify-center gap-8 py-12 font-[Outfit]">
         <!-- Card -->
         <div
-            class="bg-white rounded-4xl shadow-md w-[240px] p-6 text-center transition-all duration-700 hover:-translate-y-2 hover:-translate-x-2 sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[250px]">
+            class="bg-white rounded-4xl shadow-md w-[240px] p-6 text-center transition-all duration-700 rounded-[30px] hover:-translate-y-2 hover:-translate-x-2 sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[250px]">
             <img src="{{ asset('assets/image/Ayam Drakor.jpeg') }}" alt="Image of a burger"
                 class="rounded-full p-2 mx-auto" />
             <div class="text-[#2c3e50] text-[20px] font-bold pt-5 text-left">Menu Makanan</div>
@@ -98,7 +98,7 @@
         </div>
         <!-- Card -->
         <div
-            class="bg-white rounded-4xl shadow-md w-[240px] p-6 text-center transition-all duration-700 hover:-translate-y-2 hover:-translate-x-2 sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[250px]">
+            class="bg-white rounded-4xl shadow-md w-[240px] p-6 text-center transition-all duration-700 rounded-[30px] hover:-translate-y-2 hover:-translate-x-2 sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[250px]">
             <img src="{{ asset('assets/image/Ayam Drakor.jpeg') }}" alt="Image of a burger"
                 class="rounded-full p-2 mx-auto" />
             <div class="text-[#2c3e50] text-[20px] font-bold pt-5 text-left">Menu Makanan</div>
@@ -116,7 +116,7 @@
         </div>
         <!-- Card -->
         <div
-            class="bg-white rounded-4xl shadow-md w-[240px] p-6 text-center transition-all duration-700 hover:-translate-y-2 hover:-translate-x-2 sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[250px]">
+            class="bg-white rounded-4xl shadow-md w-[240px] p-6 text-center transition-all duration-700 rounded-[30px] hover:-translate-y-2 hover:-translate-x-2 sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[250px]">
             <img src="{{ asset('assets/image/Ayam Drakor.jpeg') }}" alt="Image of a burger"
                 class="rounded-full p-2 mx-auto" />
             <div class="text-[#2c3e50] text-[20px] font-bold pt-5 text-left">Menu Makanan</div>

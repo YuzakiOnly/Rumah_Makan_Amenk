@@ -92,9 +92,9 @@
             {{ $allproduct->links() }}
         </div>
 
-        @section('add')
+        @section('adds')
             <a href="{{ route('product.create') }}"
-                class="bg-blue-600 rounded-full w-18 h-18 flex items-center justify-center text-white text-xl">
+                class="bg-blue-600 rounded-full w-16 h-16 flex items-center justify-center text-white text-xl">
                 <span class="material-icons">
                     add
                 </span>

@@ -52,8 +52,8 @@
             {{ $allkategori->links() }}
         </div>
 
-        @section('add')
-            <a href="{{ route('kategori.create') }}" class="bg-blue-600 rounded-full w-18 h-18 flex items-center justify-center text-white text-xl fixed bottom-6 right-6 shadow-lg">
+        @section('adds')
+            <a href="{{ route('kategori.create') }}" class="bg-blue-600 rounded-full w-16 h-16 flex items-center justify-center text-white text-xl fixed bottom-6 right-6 shadow-lg">
                 <span class="material-icons">add</span>
             </a>
         @endsection
